@@ -1,0 +1,160 @@
+/* ===== Reset básico =====
+   Remove margens/espaçamentos padrão do navegador para começarmos do zero. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* ===== Cartão principal do app ===== */
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e1b4b;
+}
+
+/* ===== Formulário de adicionar tarefa ===== */
+.form-tarefa {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-tarefa input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-tarefa input:focus {
+  border-color: #8b5cf6;
+}
+
+.form-tarefa button {
+  padding: 12px 18px;
+  background: #8b5cf6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-tarefa button:hover {
+  background: #7c3aed;
+}
+
+/* ===== Botões de filtro ===== */
+.filtros {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filtro {
+  flex: 1;
+  padding: 8px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.filtro.ativo {
+  background: #ede9fe;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+/* ===== Lista de tarefas ===== */
+.lista-tarefas {
+  list-style: none;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 8px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.tarefa input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.tarefa span {
+  flex: 1;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+/* Quando a tarefa estiver concluída, riscamos o texto */
+.tarefa.concluida span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.tarefa button {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Mensagem quando não há tarefas */
+.vazio {
+  text-align: center;
+  color: #9ca3af;
+  padding: 24px 0;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.rodape button {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.rodape button:hover {
+  color: #ef4444;
+}

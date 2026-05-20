@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>📝 Minhas Tarefas</h1>
+
+    <!-- Formulário para adicionar uma nova tarefa -->
+    <form id="form-tarefa" class="form-tarefa">
+      <input
+        type="text"
+        id="input-tarefa"
+        placeholder="O que você precisa fazer?"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Botões de filtro -->
+    <div class="filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="ativas">Ativas</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <!-- A lista de tarefas será preenchida pelo JavaScript -->
+    <ul id="lista-tarefas" class="lista-tarefas"></ul>
+
+    <!-- Rodapé com contador e botão de limpar -->
+    <footer class="rodape">
+      <span id="contador">0 tarefas restantes</span>
+      <button id="limpar-concluidas">Limpar concluídas</button>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
