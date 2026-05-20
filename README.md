@@ -3,6 +3,8 @@
 Meu primeiro projeto de programação: um aplicativo de lista de tarefas
 feito com **HTML, CSS e JavaScript puro** (sem frameworks).
 
+🔗 **[Ver o app funcionando ao vivo »](https://dan-paiva.github.io/app-de-tarefas/)**
+
 ## ✨ Funcionalidades
 
 - ➕ Adicionar tarefas
